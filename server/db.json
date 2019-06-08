@@ -1,0 +1,50 @@
+{
+  "auth": {
+      "user": [
+        {
+        "_id": "1",
+        "username": "marie",
+        "password":"123456"
+        },
+        {
+          "_id": "2",
+          "username": "helen",
+          "password":"123456"
+        }
+      ]
+    },
+  "lang": {
+    "english": {
+      "language": "english",
+      "title": "New here?",
+      "title2": "Join us today",
+      "text": "Hi, everyone ;)",
+      "text2": "Welcome back",
+      "btn": "Log in",
+      "btn-sign": "Sign up",
+      "logo": "News",
+      "input": {
+        "name": "Name",
+        "email": "Email",
+        "password": "Password"
+
+      }
+    },
+    "ukraine": {
+      "language": "українська",
+      "title": "Вперше у нас?",
+      "title2": "Приєднуйся до нас",
+      "text": "Привіт усім ;)",
+      "text2": "З поверненням ;)",
+      "btn": "Увійти",
+      "btn-sign": "Приєднуйся",
+      "logo": "Новини",
+      "input": {
+        "name": "Ім'я",
+        "email": "Єлектронна адреса",
+        "password": "Пароль"
+
+      }
+    }
+  }
+}
