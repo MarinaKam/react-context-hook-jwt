@@ -17,6 +17,10 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+const SignIn = React.forwardRef((props, ref) => (
+    <Link innerRef={ref} {...props} />
+));
+
 const Header = () => {
     const classes = useStyles();
     const {data} = useContext(LanguageContext);
@@ -29,7 +33,14 @@ const Header = () => {
                     {logo}
                 </Link>
                 <HeaderIcons />
-                <Button color="inherit">{btn}</Button>
+                <Button
+                    // variant="contained"
+                    color="inherit"
+                    component={SignIn}
+                    to='/signin'
+                >
+                    {btn}
+                </Button>
             </Toolbar>
         </AppBar>
     );
