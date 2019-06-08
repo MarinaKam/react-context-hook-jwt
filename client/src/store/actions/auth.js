@@ -18,7 +18,7 @@ export const logout = () => dispatch => {
 export const authUser = (type, userData) => dispatch => {
     // wrap our thunk in a promise so we can wait for the API call
     return new Promise((resolve, reject) => {
-        return apiCall("post", `/api/auth/${type}`, userData)
+        return apiCall("post", `/auth/${type}`, userData)
             .then(({ token, ...user }) => {
                 localStorage.setItem("jwtToken", token);
                 setTokenHeader(token);
